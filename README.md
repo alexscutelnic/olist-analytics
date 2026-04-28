@@ -31,6 +31,7 @@ and enrich, and mart models serve as the final consumption layer.
 
 ## Architecture
 
+```text
 [Kaggle: Olist CSV files]
 │
 ▼
@@ -47,6 +48,7 @@ and enrich, and mart models serve as the final consumption layer.
 │
 ▼
 [BigQuery: olist_dev]        ← transformed, business-ready tables
+```
 
 ---
 
@@ -63,6 +65,7 @@ and enrich, and mart models serve as the final consumption layer.
 
 ## Project Structure
 
+```text
 olist_analytics/
 ├── models/
 │   ├── staging/               # Clean and rename raw sources
@@ -85,6 +88,7 @@ olist_analytics/
 ├── upload_reviews.py          # Source data cleaning utility
 ├── dbt_project.yml
 └── .gitignore
+```
 
 ---
 
