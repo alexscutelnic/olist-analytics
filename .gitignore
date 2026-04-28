@@ -1,0 +1,15 @@
+# dbt build output
+target/
+dbt_packages/
+logs/
+
+# Service account key - NEVER commit
+dbt-olist-analytics-9d2d8f25daa0.json
+
+# Azure emulator
+__blobstorage__/
+
+# Python
+__pycache__/
+*.pyc
+.env
