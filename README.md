@@ -1,7 +1,7 @@
 # Olist E-Commerce Analytics
 
 > A production-style analytics engineering project built with **dbt Core** and **BigQuery**,
-> using the public Olist Brazilian E-Commerce dataset (~100k orders from 2016–2018 (~97k delivered)).
+> using the public Olist Brazilian E-Commerce dataset (~100k orders from 2016–2018).
 
 ![dbt](https://img.shields.io/badge/dbt-1.11-FF694B?style=flat&logo=dbt&logoColor=white)
 ![BigQuery](https://img.shields.io/badge/BigQuery-Google%20Cloud-4285F4?style=flat&logo=googlebigquery&logoColor=white)
