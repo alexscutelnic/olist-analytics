@@ -123,7 +123,8 @@ Key fields: `customer_unique_id` · `total_spend` · `avg_order_value`
 
 ## Key Findings
 
-Top 5 revenue-generating categories across ~97k delivered orders:
+###  Top 5 Revenue Categories
+Across ~97k delivered orders, health and lifestyle categories dominate:
 
 | Rank | Category | Gross Revenue | Orders |
 |------|----------|--------------|--------|
@@ -133,6 +134,48 @@ Top 5 revenue-generating categories across ~97k delivered orders:
 | 4 | Sports & Leisure | R$954,853 | 7,582 |
 | 5 | Computers & Accessories | R$888,725 | 6,603 |
 
+---
+
+###  Delivery Performance
+The platform maintains a strong on-time delivery rate across all orders:
+
+| Status | Orders | Share |
+|--------|--------|-------|
+| On Time | 88,644 | 91.9% |
+| Late | 7,834 | 8.1% |
+
+Over 9 in 10 orders arrive on or before the estimated delivery date —
+a strong operational result for a marketplace of this scale.
+
+---
+
+###  Customer Segmentation
+The vast majority of customers are one-time buyers, but repeat and loyal
+customers spend significantly more per order:
+
+| Segment | Customers | Avg Lifetime Spend | Avg Order Value |
+|---------|-----------|-------------------|----------------|
+| One-time | 90,557 | R$160.76 | R$160.76 |
+| Repeat (2–3 orders) | 2,754 | R$300.38 | R$145.44 |
+| Loyal (4+ orders) | 47 | R$789.42 | R$170.72 |
+
+Loyal customers generate nearly 5x the lifetime value of one-time buyers,
+highlighting strong retention potential for a relatively small cohort.
+
+---
+
+###  Revenue Trend (Latest 6 Months)
+Revenue remained consistently strong through mid-2018, with May being
+the peak month in the period:
+
+| Month | Gross Revenue | Orders |
+|-------|--------------|--------|
+| Aug 2018 | R$838,577 | 6,480 |
+| Jul 2018 | R$867,953 | 6,269 |
+| Jun 2018 | R$856,078 | 6,221 |
+| May 2018 | R$977,545 | 6,878 |
+| Apr 2018 | R$973,534 | 6,944 |
+| Mar 2018 | R$953,356 | 7,110 |
 ---
 
 ## Data Quality
@@ -147,8 +190,8 @@ and accepted value ranges.
 | ❌ Failed | 0 |
 
 The 2 warnings are on `stg_order_reviews` — null values present in the
-source data due to malformed rows in the original CSV. These are handled
-gracefully using `safe_cast` and `on_bad_lines='skip'` in the cleaning
+source data due to malformed rows in the original CSV. These are handled using `safe_cast` 
+and `on_bad_lines='skip'` in the cleaning
 script, and documented as known data quality issues.
 
 ---
